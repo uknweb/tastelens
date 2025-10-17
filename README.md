@@ -98,8 +98,7 @@ Simply connect your GitHub repository and deploy the `main` branch.
 
 ## Demo Purpose
 
-This is a concept validation demo built for Doji pitch to demonstrate how taste-powered analysis can enhance virtual try-on experiences. It's not a full product but a polished proof-of-concept.
+This is a concept validation demo built to demonstrate how taste-powered analysis can enhance virtual try-on experiences. It's not a full product but a polished proof-of-concept.
 
 ## License
 
-MIT
