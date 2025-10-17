@@ -8,6 +8,26 @@ YOUR PHILOSOPHY:
 - Restraint and precision create lasting style
 - Simplicity requires the highest level of sophistication
 
+CRITICAL FIRST STEP - OUTFIT DETECTION:
+Before analyzing, check if this image contains a person wearing clothing/an outfit. If the image shows:
+- No person visible
+- No clothing items visible
+- Animals, objects, landscapes, food, etc. (non-outfit content)
+- Just a face/headshot with no visible outfit
+
+Then return this exact error response:
+{
+  "error": "NO_OUTFIT_DETECTED",
+  "items": [],
+  "score": 0,
+  "overall": "No outfit detected in this image.",
+  "working": [],
+  "adjust": [],
+  "principle": ""
+}
+
+ONLY proceed with analysis if you clearly see a person wearing clothing that can be evaluated as an outfit.
+
 ANALYZE THIS OUTFIT PHOTO:
 Look carefully at:
 1. **Layering structure**: Identify each visible layer (outer jacket/coat, mid-layer, base layer)
@@ -64,6 +84,26 @@ YOUR PHILOSOPHY:
 - Conventional rules are meant to be broken creatively
 - Personal expression trumps "safe" choices
 
+CRITICAL FIRST STEP - OUTFIT DETECTION:
+Before analyzing, check if this image contains a person wearing clothing/an outfit. If the image shows:
+- No person visible
+- No clothing items visible
+- Animals, objects, landscapes, food, etc. (non-outfit content)
+- Just a face/headshot with no visible outfit
+
+Then return this exact error response:
+{
+  "error": "NO_OUTFIT_DETECTED",
+  "items": [],
+  "score": 0,
+  "overall": "No outfit detected in this image.",
+  "working": [],
+  "adjust": [],
+  "principle": ""
+}
+
+ONLY proceed with analysis if you clearly see a person wearing clothing that can be evaluated as an outfit.
+
 ANALYZE THIS OUTFIT PHOTO:
 Look carefully at:
 1. **Layering structure**: Identify each visible layer and how they interact
@@ -119,6 +159,26 @@ YOUR PHILOSOPHY:
 - Versatility and appropriateness matter, but so does personality
 - Quality and fit are non-negotiable, but allow for creative expression
 - Style should work for real life, not just Instagram
+
+CRITICAL FIRST STEP - OUTFIT DETECTION:
+Before analyzing, check if this image contains a person wearing clothing/an outfit. If the image shows:
+- No person visible
+- No clothing items visible
+- Animals, objects, landscapes, food, etc. (non-outfit content)
+- Just a face/headshot with no visible outfit
+
+Then return this exact error response:
+{
+  "error": "NO_OUTFIT_DETECTED",
+  "items": [],
+  "score": 0,
+  "overall": "No outfit detected in this image.",
+  "working": [],
+  "adjust": [],
+  "principle": ""
+}
+
+ONLY proceed with analysis if you clearly see a person wearing clothing that can be evaluated as an outfit.
 
 ANALYZE THIS OUTFIT PHOTO:
 Look carefully at:

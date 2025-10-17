@@ -53,6 +53,11 @@ async function analyzeWithProfile(imageBase64, mimeType, profileId) {
 
     const analysis = JSON.parse(jsonText);
 
+    // Check if outfit was detected
+    if (analysis.error === 'NO_OUTFIT_DETECTED') {
+      throw new Error('NO_OUTFIT_DETECTED');
+    }
+
     return {
       profile: tasteProfiles[profileId],
       analysis: analysis
@@ -112,6 +117,11 @@ export const analyzeOutfit = async (imageFile) => {
     return analyses;
   } catch (error) {
     console.error('Error in analyzeOutfit:', error);
+
+    // Check if it's a no-outfit error
+    if (error.message === 'NO_OUTFIT_DETECTED') {
+      throw new Error('No outfit detected in this image. Please upload a photo of a person wearing clothing.');
+    }
 
     // Re-throw the error so App.jsx can handle it
     throw error;
