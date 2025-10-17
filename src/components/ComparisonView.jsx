@@ -8,7 +8,12 @@ export default function ComparisonView({ uploadedImage, analyses, onReset }) {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
       {/* Uploaded Image */}
       <div className="mb-8 sm:mb-12 text-center fade-in">
-        <h2 className="font-serif text-3xl sm:text-4xl font-normal text-black mb-6 sm:mb-10 tracking-wide">Your Outfit</h2>
+        <button
+          onClick={onReset}
+          className="font-serif text-3xl sm:text-4xl font-normal text-black mb-6 sm:mb-10 tracking-wide hover:opacity-70 transition-opacity duration-300 cursor-pointer"
+        >
+          Your Outfit
+        </button>
         <img
           src={uploadedImage}
           alt="Analyzed outfit"
