@@ -26,6 +26,9 @@ export default function ImageUpload({ onAnalyze, analysisError }) {
                    file.name.toLowerCase().endsWith('.heif');
 
     setError(null);
+    setConverting(false); // Reset converting state
+
+    console.log('File type:', file.type, 'Is HEIC:', isHEIC);
 
     try {
       let processedFile = file;
